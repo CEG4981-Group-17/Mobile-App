@@ -7,45 +7,32 @@
     tools:context=".ui.home.HomeFragment">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/nav_view"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="172dp"/>
-
-        <ToggleButton
-            android:id="@+id/toggleButton4"
-            android:layout_width="match_parent"
-            android:layout_height="92dp"
-            android:text="ToggleButton"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textIsSelectable="false"
-            android:textOff="UNLOCKED"
-            android:textOn="LOCKED" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"></LinearLayout>
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/text_home"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/ICMNameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/your_icm_is_currently"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <ToggleButton
+            android:id="@+id/lockToggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/locktogglebutton"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textOff="@string/unlocked"
+            android:textOn="@string/locked" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

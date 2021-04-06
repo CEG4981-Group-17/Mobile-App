@@ -1,6 +1,10 @@
 <resources>
-    <string name="app_name">ICMApp</string>
+    <string name="app_name">ICM App</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="your_icm_is_currently">Your ICM is currently:</string>
+    <string name="unlocked">UNLOCKED</string>
+    <string name="locked">LOCKED</string>
+    <string name="locktogglebutton">lockToggleButton</string>
 </resources>
