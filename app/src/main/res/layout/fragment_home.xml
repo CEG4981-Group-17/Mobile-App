@@ -16,24 +16,14 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="172dp">
-
-            <TextView
-                android:id="@+id/labelHome"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Home"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-        </LinearLayout>
+            android:layout_height="172dp"/>
 
         <ToggleButton
             android:id="@+id/toggleButton4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="92dp"
             android:text="ToggleButton"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textIsSelectable="false"
             android:textOff="UNLOCKED"
             android:textOn="LOCKED" />
